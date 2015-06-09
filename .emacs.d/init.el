@@ -19,6 +19,21 @@
 
     ;; yaml
     yaml-mode
+
+    ;; dockerfile
+    dockerfile-mode
+
+    ;; php
+    php-mode
+
+    ;; haml
+    haml-mode
+
+    ;; markdown
+    markdown-mode
+
+    ;; erlang
+    erlang
     ))
 
 ;; init package system

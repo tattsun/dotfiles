@@ -5,3 +5,5 @@
 ;; theme
 (load-theme 'wombat t)
 
+;; linum
+(global-linum-mode 1)

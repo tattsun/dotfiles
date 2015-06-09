@@ -19,3 +19,6 @@
 (setq-default show-trailing-whitespace t)
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 (setq require-final-newlone t)
+
+;; disable ctrl-z
+(global-set-key "\C-z" nil)

@@ -19,7 +19,7 @@ setopt pushd_ignore_dups
 setopt hist_ignore_all_dups
 
 # word chars
-WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
+# WORDCHARS='*?_-.[]~=&;!#$%^(){}<>'
 
 # colors
 autoload -Uz colors
@@ -28,3 +28,4 @@ colors
 # prompt
 PROMPT="%{${fg[green]}%}[%n@%m]%{${reset_color}%} %~
 %# "
+function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
