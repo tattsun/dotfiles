@@ -1,3 +1,16 @@
+# local
+export PATH=/usr/local/bin:$PATH
+export PATH=~/local/bin:$PATH
+
+# llvm
+export PATH=$PATH:/usr/local/opt/llvm/bin
+
+# Java 1.8
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)
+
+# C++
+export DYLD_LIBRARY_PATH=/usr/local/lib64
+
 # golang
 # export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME/work
@@ -9,6 +22,10 @@ export PATH=$HOME/.stackage/sandboxes/ghc-7.8.3/lts-2.8/bin:$PATH
 export PATH=$HOME/.stackage/sandboxes/ghc-7.8.3/lts-2.9/bin:$PATH
 export PATH=$HOME/.stackage/sandboxes/ghc-7.8.3/lts-2.10/bin:$PATH
 export PATH=$HOME/.stackage/sandboxes/ghc-7.8.3/lts-2.13/bin:$PATH
+export PATH=$HOME/.stackage/sandboxes/ghc-7.8.3/lts-2.14/bin:$PATH
+export PATH=$HOME/.stackage/sandboxes/ghc-7.8.4/lts-2.15/bin:$PATH
+export PATH=/Users/tattsun/.stack/programs/x86_64-osx/ghc-7.8.4/bin:$PATH
+export PATH=~/.local/bin/:$PATH
 
 # boot2docker
 export DOCKER_HOST=tcp://192.168.59.103:2376
@@ -23,3 +40,9 @@ export PATH=$HOME/Applications/android-sdk-macosx/tools:$PATH
 
 # postgres
 export PGDATA=/usr/local/var/postgres
+
+# cpputest
+export CPPUTEST_HOME=/usr/local/Cellar/cpputest/3.7.2
+
+# emacs
+alias emacs="~/Applications/Emacs.app/Contents/MacOS/Emacs -nw"

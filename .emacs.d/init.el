@@ -13,6 +13,10 @@
     go-autocomplete
     go-eldoc
 
+    ;; c
+    auto-complete-c-headers
+    clang-complete-async
+
     ;; haskell
     haskell-mode
     ghc
@@ -26,14 +30,20 @@
     ;; php
     php-mode
 
+    ;; hamlet
+    hamlet-mode
+
     ;; haml
-    haml-mode
+    shakespeare-mode
 
     ;; markdown
     markdown-mode
 
     ;; erlang
     erlang
+
+    ;; cmake
+    cmake-mode
     ))
 
 ;; init package system
