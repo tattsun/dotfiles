@@ -15,3 +15,6 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 
 # llvm
 brew install --with-clang --all-targets --rtti --universal --jit llvm
+
+# global(for gtags)
+brew install global --with-exuberant-ctags --with-pygments

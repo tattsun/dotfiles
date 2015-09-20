@@ -8,6 +8,9 @@
     smartparens
     flycheck
 
+    ;; ggtags
+    ggtags
+
     ;; golang
     go-mode
     go-autocomplete
@@ -15,7 +18,7 @@
 
     ;; c
     auto-complete-c-headers
-    clang-complete-async
+    auto-complete-clang-async
 
     ;; haskell
     haskell-mode
