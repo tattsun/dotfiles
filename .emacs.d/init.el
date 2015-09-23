@@ -7,6 +7,8 @@
     magit
     smartparens
     flycheck
+    rainbow-delimiters
+    company
 
     ;; ggtags
     ggtags
@@ -47,6 +49,10 @@
 
     ;; cmake
     cmake-mode
+
+    ;; unity
+    omnisharp
+    csharp-mode
     ))
 
 ;; init package system

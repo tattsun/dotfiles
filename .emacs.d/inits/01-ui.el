@@ -13,19 +13,19 @@
 (global-linum-mode 1)
 
 ;; space tab visiblity
-(require 'whitespace)
-(setq whitespace-style '(face           ; faceで可視化
-                         trailing       ; 行末
-                         tabs           ; タブ
-                         empty          ; 先頭/末尾の空行
-                         space-mark     ; 表示のマッピング
-                         tab-mark
-                         ))
+;;(require 'whitespace)
+;;(setq whitespace-style '(face           ; faceで可視化
+;;                         trailing       ; 行末
+;;                         tabs           ; タブ
+;;                         empty          ; 先頭/末尾の空行
+;;                         space-mark     ; 表示のマッピング
+;;                         tab-mark
+;;                         ))
 
-(setq whitespace-display-mappings
-      '((tab-mark ?\t [?\u00BB ?\t] [?\\ ?\t])))
+;;(setq whitespace-display-mappings
+;;      '((tab-mark ?\t [?\u00BB ?\t] [?\\ ?\t])))
 
-(global-whitespace-mode 1)
+;;(global-whitespace-mode 1)
 
 ;; font
 (set-face-attribute 'default nil
@@ -40,3 +40,5 @@
 (set-fontset-font (frame-parameter nil 'font)
                   'katakana-jisx0201
                   (cons "Ricty Diminished" "iso10646-1"))
+;; parens
+(show-paren-mode t)

@@ -1,4 +1,4 @@
-(defun cxx-mode-hooks ()
+(defun my/init-cxx ()
   (ac-cc-mode-setup)
   ;; clang-complete-async
   (require 'auto-complete-clang-async)
@@ -11,5 +11,17 @@
   ;; flycheck
   (flycheck-mode))
 
-(add-hook 'c-mode-hook 'cxx-mode-hooks)
-(add-hook 'c++-mode-hook 'cxx-mode-hooks)
+(defun my/cxx-mode-hooks ()
+  (let ((extension (file-name-extension (buffer-file-name))))
+    (cond
+     ((or (string= extension "c")
+          (string= extension "h"))
+      (my/cxx-mode-hooks))
+     ((or (string= extension "cpp")
+          (string= extension "hpp"))
+      (my/cxx-mode-hooks))
+     ((string= extension "cs")
+      nil)
+     (t nil))))
+
+(add-hook 'c-mode-hook 'my/cxx-mode-hooks)
