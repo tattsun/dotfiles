@@ -2,6 +2,7 @@
 (setq my/packages
   '(init-loader
     helm
+    helm-ls-git
     exec-path-from-shell
     magit
     smartparens
