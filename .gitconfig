@@ -1,0 +1,8 @@
+[alias]
+  st = status
+  co = checkout
+  a = add
+  c = commit
+[user]
+	name = tattsun
+	email = t.t.mc1192.sf@gmail.com

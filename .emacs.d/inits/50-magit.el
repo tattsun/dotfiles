@@ -1,1 +1,0 @@
-(defalias 'mgt 'magit-status)
